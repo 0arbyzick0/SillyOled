@@ -20,7 +20,7 @@
 ## Инициализация
 
 # Инициализация через I2C
-```
+```python
 from machine import I2C, Pin
 from sillyOled import SillyOled
 
@@ -32,7 +32,7 @@ oled = SillyOled(i2c, width=128, height=64, address=0x3C)
 ```
 
 #Инициализация через SPI
-```
+```python
 from machine import SPI, Pin
 from sillyOled import SillyOled
 
@@ -81,7 +81,7 @@ bitmap(x, y, data, width, height) - Отображает bitmap-изображе
 x, y: Координаты верхнего левого угла.
 data: Данные изображения (список байтов).
 width, height: Ширина и высота изображения.
-```
+```python
 bitmap_data = [0b00011000, 0b00111100, 0b01111110, 0b11111111, 0b11111111, 0b01111110, 0b00111100, 0b00011000]
 oled.bitmap(10, 10, bitmap_data, 8, 8)
 ```
