@@ -31,7 +31,7 @@ i2c = I2C(0, scl=Pin(22), sda=Pin(21))
 oled = SillyOled(i2c, width=128, height=64, address=0x3C)
 ```
 
-#Инициализация через SPI
+# Инициализация через SPI
 ```python
 from machine import SPI, Pin
 from sillyOled import SillyOled
